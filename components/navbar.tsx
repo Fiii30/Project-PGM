@@ -9,8 +9,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between border-b border-[#d8d4cc] bg-[#f4f2ee] px-5 py-4 md:px-10">
       <Link href="/" className="text-xl font-extrabold tracking-widest">
-        <img src="assets/logo.png" alt="logo" 
-            className="w-20 h-12 object-cover" />
+        <img src="assets/logo.png" alt="logo" className="w-20 h-12 object-cover" />
       </Link>
 
       <button
