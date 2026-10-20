@@ -56,10 +56,10 @@ export const works: Work[] = [
       "Dokumentasi intervensi jalanan dan jejak visual di ruang urban.",
     cover: "../assets/streetart/03/suadarma-01.jpg",
     photos: [
-        "../assets/streetart/03/suadarma-03.jpg",
-        "../assets/streetart/03/suadarma-02.jpg",
-        "../assets/streetart/03/suadarma-05.jpg",
         "../assets/streetart/03/suadarma-04.jpg",
+        "../assets/streetart/03/suadarma-02.jpg",
+        "../assets/streetart/03/suadarma-03.jpg",
+        "../assets/streetart/03/suadarma-05.jpg",
         "../assets/streetart/03/suadarma-06.jpg",
         "../assets/streetart/03/suadarma-09.jpg",
         "../assets/streetart/03/suadarma-08.jpg",
