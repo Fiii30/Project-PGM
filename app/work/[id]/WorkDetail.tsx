@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { works } from "@/data/works";
+import { works } from "@/types/work";
 
 export default function WorkDetail() {
   const { id } = useParams();
@@ -69,7 +69,7 @@ export default function WorkDetail() {
                 key={index}
                 src={photo}
                 alt={`${work.title} documentation ${index + 1}`}
-                className="aspect-[4/5] w-full object-cover transition duration-500 md:grayscale md:hover:grayscale-0"
+                className="aspect-4/5 w-full object-cover transition duration-500 md:grayscale md:hover:grayscale-0"
               />
             ))}
           </div>

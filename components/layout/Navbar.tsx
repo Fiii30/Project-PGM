@@ -3,13 +3,19 @@
 import Link from "next/link";
 import { useState } from "react";
 
+const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "About", href: "/about" },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between border-b border-[#d8d4cc] bg-[#f4f2ee] px-5 py-4 md:px-10">
       <Link href="/" className="text-xl font-extrabold tracking-widest">
-        <img src="assets/logo.png" alt="logo" className="w-20 h-12 object-cover" />
+        PGM
       </Link>
 
       <button
@@ -24,21 +30,11 @@ export default function Navbar() {
           open ? "translate-y-0" : "-translate-y-full md:translate-y-0"
         }`}
       >
-        <Link href="/" onClick={() => setOpen(false)}>
-          Home
-        </Link>
-
-        <Link href="/gallery" onClick={() => setOpen(false)}>
-          Gallery
-        </Link>
-
-        <Link href="/about" onClick={() => setOpen(false)}>
-          About
-        </Link>
-
-        <Link href="/contact" onClick={() => setOpen(false)}>
-          Contact
-        </Link>
+        {navLinks.map((link) => (
+          <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            {link.label}
+          </Link>
+        ))}
       </nav>
     </header>
   );
